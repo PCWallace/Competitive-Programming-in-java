@@ -30,7 +30,7 @@ import java.util.HashMap;
  static class  RBA
      {
 	static long mod=1000000009;
-	static long p=31;
+	static long p=31; //it is good for lower case otherwise take or big programs
         public void solve(int testNumber, FastReader in, PrintWriter out)            //main code
             {
 	    	String s=in.nextString();
@@ -62,6 +62,7 @@ import java.util.HashMap;
 				if (cur_h == h_s* p_pow[i] % mod)
 				    occ.add(i);
     			}
+		//printing the indexes from where the string is matching
 		int ll=occ.size();
 		for(int i=0;i<ll;i++)
 			out.println(occ.get(i));
